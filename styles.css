@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+.container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.photo-frame {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0e0e0;
+}
+
+.microbit-photo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+/* 学习平台样式 */
+.blog-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #333;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+main article {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #f9f9f9;
+}
+
+article h2 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+article p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent;
+}
+
+.read-more:hover {
+    border-bottom: 2px solid #4caf50;
+}
+
+.article-image {
+    display: block;          /* 将图片设置为块级元素 */
+    margin: 20px auto;       /* 自动设置左右间距，实现水平居中 */
+    width: 100%;
+    max-width: 600px;        /* 限制图片宽度 */
+    height: auto;            /* 保持图片比例 */
+    border-radius: 8px;      /* 圆角效果 */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* 阴影效果 */
+}
+
+/* 页面进入动画 */
+@keyframes fade-in {
+    from {
+        opacity: 0;          /* 动画开始时透明 */
+        transform: translateY(20px); /* 向下偏移 */
+    }
+    to {
+        opacity: 1;          /* 动画结束时完全显示 */
+        transform: translateY(0); /* 归位 */
+    }
+}
+
+/* 应用到整个页面的动画 */
+body {
+    animation: fade-in 0.8s ease-in-out; /* 动画持续时间0.8秒，缓入缓出 */
+    opacity: 1;
+}
+
+/* 定义进入动画 */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* 向下位移 */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 页面整体应用动画 */
+body {
+    animation: fade-in 0.8s ease-in-out;
+    opacity: 1;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 示例：调整页面容器样式 */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    max-height: 80vh; /* 设置主内容区域的最大高度 */
+    overflow-y: auto; /* 启用垂直滚动 */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 添加边框阴影，提升层次感 */
+    background: #fff; /* 背景颜色 */
+    border-radius: 8px;
+}
+
+/* 设置Read More按钮的样式 */
+.read-more {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* 为Read More按钮添加焦点和点击效果 */
+.read-more:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.8);
+}
