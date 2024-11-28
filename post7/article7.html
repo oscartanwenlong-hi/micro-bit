@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MicroBit Code Explanation</title>
+    <link rel="stylesheet" href="../styles.css">
+    <script src="../script.js" defer></script>
+</head>
+<body>
+    <div class="blog-container">
+        <header>
+            <h1>Unit Exercise: Input</h1>
+        </header>
+
+        <div class="sidebar">
+            <h3>Table of Contents</h3>
+            <ul>
+                <li><a href="../post5/article5.html">MicroBit Input Blocks</a></li>
+                <li><a href="../post6/article6.html">Examples of "on" Input Blocks</a></li>
+                <li><a href="../post7/article7.html">Unit Exercise: Input</a></li>
+            </ul>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="main-content">
+            <main>
+                <img src="ENGLISH.png" alt="MicroBit Button Input Code" class="article-image">
+
+                <h2>Explanation of the Code</h2>
+
+                <p>This code demonstrates how to use the MicroBit's button press events to trigger actions. The code uses the "onButtonPressed" block to define what should happen when either button A or button B is pressed on the MicroBit.</p>
+
+                <h3>Code Breakdown</h3>
+                <pre>
+                    input.onButtonPressed(Button.A, function () {
+                        basic.showIcon(IconNames.Heart);
+                        basic.showIcon(IconNames.SmallHeart);
+                        basic.clearScreen();
+                    });
+                    input.onButtonPressed(Button.B, function () {
+                        basic.showIcon(IconNames.Yes);
+                        basic.showIcon(IconNames.No);
+                        basic.clearScreen();
+                    });
+                </pre>
+
+                <ul>
+                    <li><strong>input.onButtonPressed(Button.A, function () { ... })</strong>: This block listens for a button A press event. When button A is pressed, the following actions are triggered:</li>
+                    <ul>
+                        <li><strong>basic.showIcon(IconNames.Heart)</strong>: Displays a heart icon on the MicroBit's LED display.</li>
+                        <li><strong>basic.showIcon(IconNames.SmallHeart)</strong>: Displays a smaller heart icon after the first heart icon.</li>
+                        <li><strong>basic.clearScreen()</strong>: Clears the MicroBit's display, turning off all LEDs.</li>
+                    </ul>
+
+                    <li><strong>input.onButtonPressed(Button.B, function () { ... })</strong>: This block listens for a button B press event. When button B is pressed, the following actions are triggered:</li>
+                    <ul>
+                        <li><strong>basic.showIcon(IconNames.Yes)</strong>: Displays a "Yes" icon on the MicroBit's LED display.</li>
+                        <li><strong>basic.showIcon(IconNames.No)</strong>: Displays a "No" icon after the "Yes" icon.</li>
+                        <li><strong>basic.clearScreen()</strong>: Clears the MicroBit's display, turning off all LEDs.</li>
+                    </ul>
+                </ul>
+
+                <p>In summary, this code demonstrates how to use button presses to trigger different actions. Pressing button A shows a heart icon sequence, and pressing button B shows a "Yes" and "No" icon sequence. The screen is cleared after each sequence.</p>
+
+                <a href="../learning.html" class="read-more">Back to Learning Platform</a>
+				<a href="https://forms.gle/uYAqng3unbo26H6M9" class="read-more">Google Form Test</a>
+                <a href="microbit-Unit-Exercise-Basic.hex" download="microbit-Unit-Exercise-Basic.hex" class="download-button">Download .hex File</a>
+            </main>
+        </div>
+    </div>
+</body>
+</html>
